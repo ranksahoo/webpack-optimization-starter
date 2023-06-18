@@ -37,3 +37,9 @@ npm i bootstrap
 npm i purgecss-webpack-plugin -D
 
 npm i jss jss-preset-default -D
+
+npm uninstall jss jss-preset-default -D
+
+npm i @emotion/css
+
+npx update-browserslist-db@latest
