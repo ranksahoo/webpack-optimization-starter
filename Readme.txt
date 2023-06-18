@@ -43,3 +43,11 @@ npm uninstall jss jss-preset-default -D
 npm i @emotion/css
 
 npx update-browserslist-db@latest
+
+npm install -D imagemin
+
+npm install image-webpack-loader --save-dev
+
+npm cache clean
+
+npm install imagemin-gifsicle -D
