@@ -5,7 +5,8 @@ import {
   newTodoEventHandler,
   removeTodoEventHandler,
   toggleTodoEventListener,
-} from "./event.handlers";
+} from "./event-handlers";
+
 window.addEventListener("load", onLoadEventHandler);
 document.addEventListener("change", function (event) {
   if (event.target.classList.contains("new-todo")) {
@@ -16,10 +17,9 @@ document.addEventListener("click", function (event) {
   if (event.target.classList.contains("delete")) {
     removeTodoEventHandler(event);
   }
-  if (event.target.classList.contains("real-checkbox")) {
+  if (event.target.dataset.element === "real-checkbox") {
     toggleTodoEventListener(event);
   }
 });
-console.log("Hello");
-console.log("Hello");
-console.log("Hello");
+
+console.log("Hello World");

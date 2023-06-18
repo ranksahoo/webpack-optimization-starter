@@ -35,3 +35,5 @@ npm i -D autoprefixer postcss-loader
 npm i bootstrap
 
 npm i purgecss-webpack-plugin -D
+
+npm i jss jss-preset-default -D

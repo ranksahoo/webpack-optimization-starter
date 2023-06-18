@@ -1,5 +1,6 @@
-import initialData from "../todo.json";
-let data = initialData;
+import initialTodos from "../todos.json";
+
+let data = initialTodos;
 
 export function getAllTodos() {
   return data;

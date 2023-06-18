@@ -1,6 +1,7 @@
 const common = require("./webpack.common.config.js");
 const { merge } = require("webpack-merge");
 const path = require("path");
+
 module.exports = merge(common, {
   mode: "development",
   output: {
@@ -23,7 +24,7 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         exclude: /\.module\.css$/,
         use: ["style-loader", "css-loader"],
       },
@@ -38,7 +39,6 @@ module.exports = merge(common, {
               modules: {
                 localIdentName: "[local]--[md4:hash:7]",
               },
-              // modules: true,
             },
           },
         ],
